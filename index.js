@@ -4,7 +4,7 @@ const axios = require('axios');
 const qs = require('qs');
 const app = express();
 
-const token = 'xoxb-1011724456372-1020703171413-c4rksnxLiaqgOkZtQc4vYac2';
+const token = 'xoxb-1011724456372-1020703171413-mFlxRe9z15M8qlY9FLTsAilp';
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
