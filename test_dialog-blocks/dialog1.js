@@ -15,7 +15,7 @@ let getDialog = () => {
         "type": "textarea",
         "label": "ISSUE DESCRIPTION",
         "name": "txt_description",
-        "optional": true
+        "optional": false
       },
       {
         "label": "PRIORITY",
