@@ -15,13 +15,39 @@ let getDialog = () => {
         "type": "textarea",
         "label": "ISSUE DESCRIPTION",
         "name": "txt_description",
+        "placeholder": "Please give a description of the issue",
         "optional": false
+      },
+      {
+        "label": "AFFECTED APPLICATION",
+        "type": "select",
+        "name": "sel_affected_application",
+        "placeholder": "Choose an affected application",
+        "options": [
+          {
+            "label": "CRM",
+            "value": "CRM"
+          },
+          {
+            "label": "Admin",
+            "value": "Admin"
+          },
+          {
+            "label": "DMAP",
+            "value": "DMAP"
+          },
+          {
+            "label": "Accounting",
+            "value": "Accounting"
+          }
+        ]
       },
       {
         "label": "PRIORITY",
         "type": "select",
         "value": "NORMAL",
         "name": "sel_priority",
+        "placeholder": "Choose a priority",
         "options": [
           {
             "label": "NORMAL",
@@ -30,14 +56,15 @@ let getDialog = () => {
           {
             "label": "CRITICAL",
             "value": "CRITICAL"
-          },
+          }
         ]
       },
       {
         "type": "text",
         "label": "DUE DATE",
         "value": duedate,
-        "name": "txt_duedate"
+        "name": "txt_duedate",
+        "placeholder": "MM/DD/YYYY"
       },
       {
           "type": "textarea",
