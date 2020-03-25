@@ -8,8 +8,6 @@ require('dotenv').config()
 
 const token = process.env.BOT_TOKEN;
 
-console.log(token);
-
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
