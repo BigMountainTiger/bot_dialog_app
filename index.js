@@ -4,7 +4,11 @@ const axios = require('axios');
 const qs = require('qs');
 const app = express();
 
-const token = 'xoxb-1011724456372-1020703171413-mFlxRe9z15M8qlY9FLTsAilp';
+require('dotenv').config()
+
+const token = process.env.BOT_TOKEN;
+
+console.log(token);
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -87,6 +91,8 @@ app.post('/inline', async (req, res) => {
         }
       ]
     });
+
+    return;
   }
 
   blocks[1].text.text = text;
