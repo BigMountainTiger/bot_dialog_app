@@ -22,23 +22,23 @@ let getDialog = () => {
         "label": "AFFECTED APPLICATION",
         "type": "select",
         "name": "sel_affected_application",
-        "placeholder": "Choose an affected application",
+        "placeholder": "Please choose an affected application",
         "options": [
           {
-            "label": "CRM",
-            "value": "CRM"
+            "label": "Accounting",
+            "value": "Accounting"
           },
           {
             "label": "Admin",
             "value": "Admin"
           },
           {
-            "label": "DMAP",
-            "value": "DMAP"
+            "label": "CRM",
+            "value": "CRM"
           },
           {
-            "label": "Accounting",
-            "value": "Accounting"
+            "label": "DMAP",
+            "value": "DMAP"
           }
         ]
       },
@@ -47,7 +47,7 @@ let getDialog = () => {
         "type": "select",
         "value": "NORMAL",
         "name": "sel_priority",
-        "placeholder": "Choose a priority",
+        "placeholder": "Please choose a priority",
         "options": [
           {
             "label": "NORMAL",
