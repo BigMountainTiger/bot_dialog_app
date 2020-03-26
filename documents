@@ -57,6 +57,11 @@ aws_secret_access_key = song.li_secret_key
 
 --profile option
 
+S3 bucket - sam.huge.head.li
+
+aws s3 cp ./a-file s3://sam.huge.head.li --profile song.li
+aws s3 rm s3://sam.huge.head.li --recursive --profile song.li
+
 A
 
 	
